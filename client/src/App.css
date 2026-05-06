@@ -1,0 +1,357 @@
+/* Sticky form layout helper */
+.sticky-form-parent {
+  position: relative;
+  min-height: 100vh;
+}
+
+.contact-form-card {
+  align-self: flex-start;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Auth form card styles */
+.auth-form-card {
+  max-width: 520px;
+  margin: 72px auto 0 auto;
+  background: linear-gradient(135deg, #fafdff 80%, #f3f6fb 100%);
+  border-radius: 14px;
+  box-shadow: 0 4px 24px 0 rgba(158, 180, 216, 0.1);
+  padding: 20px 35px 35px 35px;
+  border: 1.5px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth-form-card h2 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+
+
+
+
+
+.auth-form-card .btn-primary:hover,
+.auth-form-card .btn-primary:focus {
+  background: #1d4ed8;
+  box-shadow: 0 2px 8px 0 rgba(37, 99, 235, 0.13);
+  transform: translateY(-1px) scale(1.01);
+}
+
+.auth-form-card .alert-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Modern contact card styles */
+.contact-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(30, 41, 59, 0.08);
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  border: none;
+  transition: box-shadow 0.2s;
+  position: relative;
+  font-size: 1.08rem;
+}
+
+.contact-card:hover {
+  box-shadow: 0 6px 24px 0 rgba(30, 41, 59, 0.12);
+}
+
+.contact-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.contact-card .badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.35em 0.8em;
+  border-radius: 8px;
+}
+
+.contact-card .list-unstyled {
+  margin-bottom: 0.8rem;
+}
+
+.contact-card .mt-3.d-flex.gap-2 {
+  margin-top: 1.2rem !important;
+}
+
+.contact-card .btn {
+  font-size: 0.98rem;
+  border-radius: 8px;
+  padding: 0.35em 1.1em;
+  margin-right: 0.5em;
+  border: none;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+}
+
+.contact-card .btn-outline-primary {
+  color: #2563eb;
+  border: 1.5px solid #2563eb;
+  background: #f4f7fb;
+}
+
+.contact-card .btn-outline-primary:hover,
+.contact-card .btn-outline-primary:focus {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 0 0 2px #dbeafe;
+}
+
+.contact-card .btn-outline-danger {
+  color: #dc2626;
+  position: sticky;
+  top: 88px;
+  /* Adjust if your navbar is a different height */
+}
+
+.contact-card .btn-outline-danger:hover,
+.contact-card .btn-outline-danger:focus {
+  background: #dc2626;
+  color: #fff;
+  box-shadow: 0 0 0 2px #fee2e2;
+}
+
+/* Modern form styles */
+.contact-form-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(30, 41, 59, 0.12);
+  padding: 30px 28px 24px 28px;
+  border: none;
+  margin-bottom: 0;
+  position: sticky;
+  top: 115px;
+  /* Match your navbar height exactly */
+  z-index: 110;
+}
+
+.contact-form-card h4 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.contact-form-card .form-control {
+  border-radius: 8px;
+  border: 1.5px solid #e5e7eb;
+  font-size: 1rem;
+  padding: 0.7em 1em;
+  margin-bottom: 1.1em;
+  background: #f8fafc;
+  transition: border 0.15s, box-shadow 0.15s;
+  text-align: left;
+}
+
+.contact-form-card .form-control:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #dbeafe;
+  background: #fff;
+}
+
+.contact-form-card .form-check-input {
+  border-radius: 50%;
+  border: 1.5px solid #e5e7eb;
+  margin-right: 0.5em;
+}
+
+.contact-form-card .form-check-input:checked {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.contact-form-card .btn-primary {
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.08rem;
+  padding: 0.7em 0;
+  margin-top: 0.5em;
+  box-shadow: 0 2px 8px 0 rgba(37, 99, 235, 0.08);
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.contact-form-card .btn-primary:hover,
+.contact-form-card .btn-primary:focus {
+  background: #1d4ed8;
+  box-shadow: 0 4px 16px 0 rgba(37, 99, 235, 0.12);
+}
+
+.contact-form-card .btn-secondary {
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.01rem;
+  margin-top: 0.5em;
+}
+
+/* Responsive layout for contacts and form */
+.contacts-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.contacts-list-section {
+  flex: 2 1 0;
+  min-width: 0;
+}
+
+.contacts-form-section {
+  flex: 1 1 320px;
+  min-width: 280px;
+  max-width: 400px;
+  min-height: 600px;
+  height: 100vh;
+  overflow: visible;
+  width: 100%;
+  min-width: 240px;
+  max-width: 400px;
+  box-sizing: border-box;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .contacts-layout {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contacts-form-section {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+  background: #f4f7fb;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #1e293b;
+  background: #f4f7fb;
+}
+
+/* Fixed header styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 12px 0 rgba(30, 41, 59, 0.06);
+}
+
+.main-container {
+  max-width: 1050px;
+  margin: 72px auto 0 auto;
+  background: #f8fafc;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(30, 41, 59, 0.08);
+  padding: 40px 32px 48px 32px;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    padding: 16px 4px 32px 4px;
+    border-radius: 0;
+    margin: 0;
+    min-height: 100vh;
+    margin-top: 72px;
+  }
+}
+
+/* Animations for contact list items */
+.item-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.item-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.item-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.item-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
